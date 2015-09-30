@@ -14,9 +14,10 @@ func main() {
 		panic(err)
 	}
 
+	fmt.Println("Saving after_write.xlsx")
 	originalXlFile.Save("after_write.xlsx")
 
-	fmt.Println("Opening after_write.xlsx")
+	fmt.Println("Opening after_write.xlsx again")
 	_, err = xlsx.OpenFile("after_write.xlsx")
 
 	if err != nil {
